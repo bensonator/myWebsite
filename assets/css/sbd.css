@@ -1,0 +1,331 @@
+.header {
+	background-color: #263839;
+}
+
+.navigation {
+	margin: 0 auto;
+	display:flex;
+	flex-direction:row;
+	list-style:none;
+	margin-bottom: 20px;
+	justify-content: space-between;
+}
+
+.title {
+	font-family: 'Khula', sans-serif;
+	font-weight: 700;
+	color: white;
+	font-size: 28px;
+	line-height: 40px;
+	display:block;
+	vertical-align: middle;
+	padding-top: 10px;
+	padding-left: 20px;
+}
+
+.mobile-title {
+	display:none;
+}
+
+.mobile-menu {
+	display: none;
+	padding: 10px 10px 10px 0;
+}
+
+.burger-btn {
+	position: absolute;
+	right: 20px;
+	top: 14px;
+	cursor: pointer;
+	height: 20px;
+}
+
+.burger-btn span {
+	display: block;
+	width: 20px;
+	height: 2px;
+	background: rgb(244,244,244);
+	z-index: 99;
+	margin: 4px 0;
+}
+
+
+.links {
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	text-decoration: none;
+}
+
+.links-mobile {
+	display:none;
+/*	flex-direction:row;
+	justify-content:flex-end;
+	text-decoration: none;
+	transform:translateY(-30%);*/
+	
+
+}
+
+
+/*.expand{
+	display: block !important;
+	height:100%;
+	transition: all 1.2s;
+	transform:translateY(0%);
+}*/
+
+
+a {
+	color:white;
+	text-decoration: none;
+	font-family: 'Khula', sans-serif;
+	letter-spacing: 4px;
+	padding: 20px;
+	font-size:12px;
+	display:block;
+}
+
+a:hover {
+	background: #3D484F;
+	color:yellow;
+
+}
+
+li {
+	list-style-type: none;
+
+}
+
+.content{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow: hidden;
+}
+
+.project {
+	background-color: black;
+	height: 200px;
+	width:40%;
+	margin:20px;
+	overflow:hidden;
+}
+
+.projectDescription {
+	background-color: green;
+	height:100px;
+}
+
+.overlay{
+	background-color: rgba(0, 0, 0, 0);
+	color:rgba(255, 255, 255, 0);
+	opacity:0;
+	max-width: 100%;
+	height:100%;
+}
+
+.overlay:hover{
+	opacity: 1;
+	color: rgba(255, 255, 255, 1);
+	background-color: rgba(0, 0, 0, 0.5);
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    cursor: pointer;
+}
+
+
+p {
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Khula', sans-serif;
+	font-size:16px;
+	text-align: center;
+	vertical-align: center; 
+	padding: 90px;
+	letter-spacing: 4px;
+
+}
+
+.image-1 {
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/QProd-header.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height:100%;
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+}
+
+.image-1:hover {
+	transform: scale(1.1);
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    cursor: pointer;
+}
+
+
+.image-2 {
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/TAD-header-01.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height:200px;
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+
+}
+
+.image-2:hover {
+	transform: scale(1.1);
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    box-sizing: border-box;
+    overflow:hidden;
+    cursor: pointer;
+
+}
+
+.image-3 {
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/MarketingBusinessCards4.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height:200px;
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+}
+
+.image-3:hover {
+	transform: scale(1.1);
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    cursor: pointer;
+}
+
+
+.image-4 {
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/RADA-header-02.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	max-width: 100%;
+	height:100%;
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+}
+
+.image-4:hover {
+	transform: scale(1.1);
+    transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+    cursor: pointer;
+}
+
+/*
+@media (max-width: 800px) {
+	.navigation {
+		justify-content: center;
+	}*/
+
+
+@media (max-width: 620px) {
+	
+
+	.navigation {
+		display:none;
+		flex-flow: column wrap;
+		margin-bottom: 0px;
+		flex-direction: column;
+	}
+
+	.links-mobile {
+		display:none;
+		flex-flow: column wrap;
+		margin-bottom: 0px;
+		margin-right:0px;
+		flex-direction: column;
+/*		transform:translateY(-30%);
+*/		height:0px;
+	}
+
+	.mobile-menu {
+		display: block;
+		padding-right:0px;
+	}
+
+	.mobile-title {
+	font-family: 'Khula', sans-serif;
+	color: white;
+	font-size: 32px;
+	line-height: 32px;
+	display:block;
+	padding-left: 20px;
+	}
+
+	.desktop-menu {
+		display: none;
+	}
+
+	.title {
+		display:none;
+	}
+
+	li {
+		text-align:center;
+	}
+	
+	a {
+		padding-left: 0px;
+	}
+
+	.content {
+		flex-direction: column;
+	}
+
+
+	.project {
+		margin:0;
+		width:100%;
+	}
+
+	.expand {
+	display: block;
+	transform:translateY(0%);
+	height: 208px;
+
+/*	transition: all 1.2s;*/
+
+	}
+
+/*	.links-mobile.expand {
+		transition-duration: 1s;
+	}
+*/
+	.collapse {
+		display: none;
+		height:0px;
+	}
+
+}

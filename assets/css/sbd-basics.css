@@ -1,0 +1,574 @@
+
+.header {
+	background-color: rgba(255,255,255,1);
+	position:fixed;
+	width:100%;
+	z-index: 100;
+	top:0;
+	height:188px;
+	transition:all 0.3s ease;
+    -webkit-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    -moz-transition:all 0.3s ease;
+}
+
+.navigation {
+	margin: 0 auto;
+	display:flex;
+	flex-direction:row;
+	list-style:none;
+	margin-bottom: 32px;
+	justify-content: space-between;
+}
+
+.logo {
+	font-family: 'BrandonGrotesqueWeb-Black';
+	font-weight: 700;
+	color: #222C34;
+	font-size: 32px;
+	line-height: 40px;
+	letter-spacing: 2px;
+	display:block;
+	vertical-align: middle;
+	padding-top: 32px;
+	padding-left: 32px;
+	max-height: 100px;
+}
+
+.link-groups {
+	display:flex;
+	flex-direction:row;
+	justify-content:flex-end;
+	text-decoration: none;
+}
+
+
+.nav-links {
+	color: #222C34;
+	text-decoration: none;
+	font-family: 'Khula', sans-serif;
+	padding: 16px 32px 0px 0px;
+	font-size:12px;
+	display:block;
+	transition:all 0.1s ease;
+    -webkit-transition:all 0.1s ease;
+    -o-transition:all 0.1s ease;
+    -moz-transition:all 0.1s ease;
+}
+
+
+a {
+	text-decoration: none;
+}
+
+a.nav-links:hover {
+	background: rgba(33, 40, 50, 0.04);
+}
+
+li {
+	list-style-type: none;
+
+}
+
+.content{
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow: hidden;
+	margin: 32px;
+	margin-top: 188px;
+}
+
+.content-shrink {
+	display:flex;
+	flex-direction: column;
+	flex-wrap: wrap;
+	justify-content: center;
+	overflow: hidden;
+	margin: 32px;
+	margin-top: 100px;
+}
+
+/*.small {
+	height:80px;
+	position:fixed;
+	width:100%;
+	z-index: 100;
+	top:0;
+}
+
+.up {
+  transform: translateY(-16px);
+}*/
+
+.shrink {
+	transform: translateY(-16px);
+	height:80px;
+}
+
+.project {
+	height: 312px;
+	width:100%;
+	margin-bottom: 32px;
+	overflow:hidden;
+	display:flex;
+	flex-direction: row;	
+}
+
+.projectDescription {
+	background-color: #222C34;
+	height:312px;
+	width:50%;
+	padding:32px;
+	transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -o-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease; 
+}
+
+.descriptions {
+	height:80%;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between; 
+}
+
+.image-container {
+	background-color: #222C34;
+	height:100%;
+	width:50%;
+	overflow: hidden;
+}
+
+.projectLink {
+	display: flex;
+	flex-direction: row;
+}
+
+
+.projectLinkText {
+	padding-right: 16px;
+	transition:all 0.4s ease;
+    -webkit-transition:all 0.4s ease;
+    -o-transition:all 0.4s ease;
+    -moz-transition:all 0.4s ease;
+}
+
+.project:hover .image-1 {
+	transform: scale(1.05);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project:hover .image-2 {
+	transform: scale(1.05);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project:hover .image-3 {
+	transform: scale(1.05);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project:hover .image-4 {
+	transform: scale(1.05);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project:hover .image-5 {
+	transform: scale(1.05);
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.project:hover .projectLinkText {
+	padding-right: 22px;
+}
+
+.project:hover .projectDescription {
+	background-color: #2C3A43;
+}
+
+h1 {
+	color: #222C34;
+	font-family: 'BrandonGrotesqueWeb-Black';
+	font-size:42px;
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+h2 {
+	color: rgba(255, 255, 255, 1);
+	font-family: 'BrandonGrotesqueWeb-Black';
+	font-size:24px;
+	text-align: left;
+	letter-spacing: 1px;
+}
+
+
+h3 {
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Khula', sans-serif;
+	font-size: 14px;
+	text-align: left;
+	padding-bottom:12px;
+}
+
+h4 {
+	color: rgba(255, 255, 255, 1);
+	font-family: 'BrandonGrotesqueWeb-Black';
+	font-size: 14px;
+	text-align: left;
+	line-height: 16px;
+	margin: 0 auto;
+	padding-top: 4px;
+}
+
+h5 {
+	color: #222C34;
+	text-decoration: none;
+	font-family: 'BrandonGrotesqueWeb-Black';
+	letter-spacing: 2px;
+	padding: 44px 32px 0px 0px;
+	font-size:12px;
+	display:block;
+}
+
+h6 {
+	color: #222C34;
+	text-decoration: none;
+	font-family: 'BrandonGrotesqueWeb-Black';
+	letter-spacing: 2px;
+	font-size:14px;
+	display:block;
+}
+
+p {
+	color: rgba(255, 255, 255, 1);
+	font-family: 'Khula', sans-serif;
+	font-size:16px;
+	text-align: center;
+	vertical-align: center; 
+	padding: 90px;
+	letter-spacing: 4px;
+}
+
+.image-1 {
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/aura/aura2.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height:100%;
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+}
+
+.image-2 {
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/QProd-header.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height:100%;
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+}
+
+.image-3 {
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/marketing/MarketingBusinessCards2.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height:100%;
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+}
+
+.image-4 {
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/tad/TADmockup.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height:100%;
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+}
+
+
+.image-5 {
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/rada/RADA-calendar.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	width: 100%;
+	height:100%;
+	transition:all 0.5s ease;
+    -webkit-transition:all 0.5s ease;
+    -o-transition:all 0.5s ease;
+    -moz-transition:all 0.5s ease;
+}
+
+.footer {
+	margin: 0 auto;
+	width:40%;
+	display:flex;
+	flex-direction:row;
+	list-style:none;
+	margin-bottom: 32px;
+	justify-content: space-between;
+
+}
+
+p1 {
+	color: #222C34;
+	font-family: 'Khula', sans-serif;
+	font-size:14px;
+	text-align: center;
+	vertical-align: center; 
+	padding: 8px;
+	justify-content: space-around;
+}
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%
+}
+
+.sticky + .content {
+  padding-top: 102px;
+}
+
+
+.hidden {
+	visibility: hidden;
+}
+
+/*Extra for project page*/
+
+/*body {
+	background-color: #F5F5F5; 
+}*/
+.header-image {
+	height:320px;
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/QProd-header.png);
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.project-content {
+	margin: 32px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+	margin-top: 160px;
+}
+
+.project-info {
+	display: flex;
+	flex-direction: row;
+	width:100%;
+/*	background-color: #F5F5F5;
+*/
+}
+
+.project-desc {
+	width:50%;
+	display: flex;
+	flex-direction: column;
+/*	padding: 32px 0px 0px 32px;
+*/	margin-bottom: 100px;
+
+/*	justify-content: center;
+*/}
+
+.project-info {
+	display: flex;
+	flex-direction: row;
+	width:100%;
+}
+
+.project-what {
+	width: 50%;
+}
+
+.project-image {
+	width: 100%;
+/*	margin-top:32px;
+*/}
+
+.body-copy {
+	color: #222C34;
+	font-family: 'Khula', sans-serif;
+	font-weight: 100;
+	font-size:14px;
+	text-align: left;
+	padding: 8px 0px 8px 0px;
+	line-height: 24px;
+}
+
+.project-copy {
+	color: #222C34;
+	font-family: 'Khula', sans-serif;
+	font-weight: 100;
+	font-size:14px;
+	text-align: left;
+	padding: 16px 0px 40px 0px;
+	line-height: 24px;
+}
+
+.caption {
+	color: #222C34;
+	font-family: 'Khula', sans-serif;
+	font-size:12px;
+	font-weight: 100;
+	text-align: left;
+	padding: 12px 0px 40px 0px;
+	line-height: 24px;
+/*	width: 50%;
+*/}
+
+.twoColumns {
+	display:flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+
+.half-text {
+	display: flex;
+	flex-direction: column;
+	width:50%;
+
+}
+
+/*about
+*/
+
+.company-name{
+	color: #222C34;
+	text-decoration: none;
+	font-family: 'BrandonGrotesqueWeb-Black';
+	letter-spacing: 2px;
+	font-size:14px;
+	line-height: 24px;
+	padding: 8px 0px 8px 0px;
+
+}
+
+.profile-info {
+	display: flex;
+	flex-direction: row;
+	width:100%;
+	justify-content: space-between;
+}
+
+.profile-image {
+	width:49%;
+	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/about/sarah.png);
+	background-size: cover;
+/*	background-position: center;
+*/	background-repeat: no-repeat;
+
+}
+
+.profile-desc {
+	width:49%;
+	display: flex;
+	flex-direction: column;
+/*	padding: 32px 0px 0px 32px;
+*/	margin-bottom: 100px;
+}
+
+.job-title {
+	color: #222C34;
+	font-family: 'Khula', sans-serif;
+	font-weight: 100;
+	font-size:14px;
+	text-align: right;
+	padding: 8px 0px 8px 0px;
+	line-height: 24px;
+}
+
+.nav-headers {
+	color: #222C34;
+	text-decoration: none;
+	font-family: 'BrandonGrotesqueWeb-Black';
+	letter-spacing: 2px;
+	padding: 44px 32px 0px 0px;
+	font-size:12px;
+	display:block;
+}
+
+
+/*@media only screen and (min-width:600px) and (max-width: 1200px) {
+}*/
+
+@media only screen and (max-width: 600px) {
+	.project {
+		height: 440px;
+		width:100%;
+		margin-bottom: 32px;
+		display:flex;
+		flex-direction: column-reverse;	
+	}
+
+	.image-container {
+		height:240px;
+		width:100%;
+		overflow: hidden;
+	}
+
+	.projectDescription {
+		background-color: #222C34;
+		height:120px;
+		width:100%;
+		padding:32px;
+	}
+
+	.descriptions {
+		height:120px;
+		display: flex;
+		flex-direction: column;
+		justify-content: space-between; 
+	}
+
+	.project:hover .projectDescription {
+		background-color: #2C3A43;
+		height:120px;
+	}
+
+/*	project page
+*/
+	
+	.project-info {
+	display:flex;
+	flex-direction: column;
+	width:100%;
+	}
+
+	.project-desc {
+	width:100%;
+	}
+
+	.project-what {
+	width: 50%;
+	padding-bottom: 24px;	
+	}
+
+}
