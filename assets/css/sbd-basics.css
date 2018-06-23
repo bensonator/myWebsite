@@ -12,13 +12,23 @@
     -moz-transition:all 0.3s ease;
 }
 
-.navigation {
+.desktop-menu {
 	margin: 0 auto;
 	display:flex;
 	flex-direction:row;
 	list-style:none;
 	margin-bottom: 32px;
 	justify-content: space-between;
+}
+
+.mobile-menu {
+	display: none;
+}
+
+.expand {
+	display:block;
+	height:64px;
+	background-color: white;
 }
 
 .logo {
@@ -35,11 +45,19 @@
 	max-height: 100px;
 }
 
+.logo-mobile {
+	display:none;
+}
+
 .link-groups {
 	display:flex;
 	flex-direction:row;
 	justify-content:flex-end;
 	text-decoration: none;
+}
+
+.links-mobile {
+	display: none;
 }
 
 
@@ -56,6 +74,22 @@
     -moz-transition:all 0.1s ease;
 }
 
+.burger-btn {
+	position:absolute;
+	right:32px;
+	top:36px;
+	cursor: pointer;
+	height:20px;
+}
+
+.burger-btn span {
+	display:block;
+	width:20px;
+	height: 2px;
+	background: #222C34;
+	z-index: 99;
+	margin: 4px 0px;
+}
 
 a {
 	text-decoration: none;
@@ -135,7 +169,6 @@ li {
 }
 
 .image-container {
-	background-color: #222C34;
 	height:100%;
 	width:50%;
 	overflow: hidden;
@@ -258,7 +291,7 @@ p {
 }
 
 .image-1 {
-	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/aura/aura2.png);
+	background-image: url("../images/aura/aura2.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -271,7 +304,7 @@ p {
 }
 
 .image-2 {
-	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/QProd-header.png);
+	background-image: url("../images/QProd-header.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -284,7 +317,7 @@ p {
 }
 
 .image-3 {
-	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/marketing/MarketingBusinessCards2.png);
+	background-image: url("../images/marketing/MarketingBusinessCards2.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -297,7 +330,7 @@ p {
 }
 
 .image-4 {
-	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/tad/TADmockup.png);
+	background-image: url("../images/tad/TADmockup.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -311,7 +344,7 @@ p {
 
 
 .image-5 {
-	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/rada/RADA-calendar.png);
+	background-image: url("../images/rada/RADA-calendar.png");
 	background-size: cover;
 	background-position: center;
 	background-repeat: no-repeat;
@@ -334,7 +367,7 @@ p {
 
 }
 
-p1 {
+.footer-text {
 	color: #222C34;
 	font-family: 'Khula', sans-serif;
 	font-size:14px;
@@ -342,6 +375,10 @@ p1 {
 	vertical-align: center; 
 	padding: 8px;
 	justify-content: space-around;
+}
+
+.footer-mobile {
+	display:none;
 }
 
 .sticky {
@@ -450,6 +487,15 @@ p1 {
 	justify-content: space-between;
 }
 
+.halfColumn {
+	width:49%; 
+	overflow: hidden;
+}
+
+.halfColumn img {
+	width:100%;
+}
+
 .half-text {
 	display: flex;
 	flex-direction: column;
@@ -519,7 +565,91 @@ p1 {
 /*@media only screen and (min-width:600px) and (max-width: 1200px) {
 }*/
 
+@media only screen and (max-width: 860px) {
+	.desktop-menu {
+		display:none;
+	}
+
+	.logo {
+		display:none;
+	}
+
+	.links-mobile {
+		display: none;
+	}
+
+	.mobile-menu {
+		display:flex;
+		flex-direction:row;
+		list-style:none;
+		justify-content: space-between;
+	}
+
+	.logo-mobile{
+		font-family: 'BrandonGrotesqueWeb-Black';
+		font-weight: 700;
+		color: #222C34;
+		font-size: 32px;
+		line-height: 40px;
+		letter-spacing: 2px;
+		display:block;
+		vertical-align: middle;
+		padding-top: 32px;
+		padding-left: 32px;
+		max-height: 100px;
+	}
+
+	.content {
+		margin-top: 64px;
+	}
+
+	.header {
+		height:80px;
+		transform: translateY(-16px);
+
+	}
+
+	.half-text {
+		display: flex;
+		flex-direction: column;
+		width:100%;
+	}
+
+	.twoColumns {
+	display:flex;
+	flex-direction: column;
+	justify-content: space-between;
+	}
+
+	.halfColumn{
+		width:100%;
+		margin-bottom: 24px;
+	}
+
+	.footer {
+		display:none;
+	}
+
+	.mobile-footer-links {
+		display: flex;
+		flex-direction: row;
+		padding:8px 32px;
+		justify-content: space-between;
+	}
+
+	.footer-mobile {
+		margin: 0 auto;
+		width:50%;
+		display:flex;
+		flex-direction:column;
+		list-style:none;
+		margin-bottom: 32px;
+	}
+
+}
+
 @media only screen and (max-width: 600px) {
+
 	.project {
 		height: 440px;
 		width:100%;
@@ -529,7 +659,7 @@ p1 {
 	}
 
 	.image-container {
-		height:240px;
+		height:320px;
 		width:100%;
 		overflow: hidden;
 	}

@@ -13,26 +13,53 @@
 <body>
 	<div class="header shrink">
 
-		<div class="desktop-menu">
-			<ul class="navigation">
-				<a class="logo" href="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/home.html">SARAH BENSON</a>
-				<div class="link-groups">
+			<div class="mobile-menu">
+				<a class="logo-mobile" href="index.html">SARAH BENSON</a>
+				<div class="burger-btn">
+					<span></span>
+					<span></span>
+					<span></span>
+				</div>
+
+				<div class="links-mobile">
 					<li>
-						<a class="nav-headers" href="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/product.html">PRODUCT DESIGN</a>
+						<a class="nav-headers" href="product.html">PRODUCT DESIGN</a>
+						<a class="nav-links" href='project-aura.html'>Qubit Aura</a>
+						<a class="nav-links" href='project-segments.html'>Qubit Segments</a>
 					</li>
 					<li>
-						<a class="nav-headers" href="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/visual.html">VISUAL DESIGN</a>
+						<a class="nav-headers" href="visual.html">VISUAL DESIGN</a>
+						<a class="nav-links" href='project-tad.html'>Truth About Data</a>
+						<a class="nav-links" href='project-marketing.html'>Qubit Marketing</a>
+						<a class="nav-links" href='project-rada.html'>RADA</a>
 					</li>
 					<li>
 						<a class="nav-headers" href="https://medium.com/@sarahbenson18">WRITING</a>
 					</li>
 					<li>
-						<a class="nav-headers" href='file:///Users/sarah458_122/Dropbox/SBD%20-%20website/about.html'>ABOUT</a>
+						<a class="nav-headers" href='about.html'>ABOUT</a>
 					</li>
 				</div>
 
-			</ul>
-		</div>
+			</div>
+
+			<div class="desktop-menu">
+				<a class="logo" href="index.html">SARAH BENSON</a>
+				<div class="link-groups">
+					<li>
+						<a class="nav-headers" href="product.html">PRODUCT DESIGN</a>
+					</li>
+					<li>
+						<a class="nav-headers" href="visual.html">VISUAL DESIGN</a>
+					</li>
+					<li>
+						<a class="nav-headers" href="https://medium.com/@sarahbenson18">WRITING</a>
+					</li>
+					<li>
+						<a class="nav-headers" href='about.html'>ABOUT</a>
+					</li>
+				</div>
+			</div>
 	</div>
 
 	<div class="project-content">
@@ -59,13 +86,13 @@
 					<div class="project-when">
 						<h6>WHEN</h6>
 						<div class="body-copy">
-						2017
+						2013
 						</div>
 					</div>
 				</div>
 				</div>
 			</div>
-				<img src="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/rada/poster_mockup_double2.png" width=100%>
+				<img src="assets/images/rada/poster_mockup_double2.png" width=100%>
 				<div class="caption">
 					Posters for two of the courses run at RADA
 				</div>
@@ -75,8 +102,12 @@
 					</div>
 				</div>
 				<div class="twoColumns">
-					<img src="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/rada/RADA-calendar2.png" width=49% height=49%>
-					<img src="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/rada/RADA-othello.png" width=49% height=49%>
+					<div class="halfColumn">
+						<img src="assets/images/rada/RADA-calendar2.png">
+					</div>
+					<div class="halfColumn">
+						<img src="assets/images/rada/RADA-othello.png">
+					</div>
 				</div>
 				<br>
 				<br>
@@ -87,45 +118,29 @@
 	 
 					</div>
 				</div>
-				<img src="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/rada/RADA-MA.png" width=100%>
+				<img src="assets/images/rada/RADA-MA.png" width=100%>
 			</div>
 			</div>
 	</div>
 
 	<div class="footer">
-		<p1>sarahbensondesign@gmail.com</p1>
-		<img src="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/assets/icons/linkedin-logo.svg">
-		<img src="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/assets/icons/Twitter_bird_logo_2012.svg">
-		<img src="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/assets/icons/medium.svg">
-		<img src="file:///Users/sarah458_122/Dropbox/SBD%20-%20website/assets/icons/dribbble.svg">
+		<div class="footer-text">sarahbensondesign@gmail.com</div>
+		<img src="assets/icons/linkedin-logo.svg">
+		<img src="assets/icons/Twitter_bird_logo_2012.svg">
+		<img src="assets/icons/medium.svg">
+		<img src="assets/icons/dribbble.svg">
+	</div>	
+	<div class="footer-mobile">
+		<div>
+			<div class="footer-text">sarahbensondesign@gmail.com</div>
+		</div>
+		<div class="mobile-footer-links">
+			<img src="assets/icons/linkedin-logo.svg">
+			<img src="assets/icons/Twitter_bird_logo_2012.svg">
+			<img src="assets/icons/medium.svg">
+			<img src="assets/icons/dribbble.svg">
+		</div>
 	</div>	
 
-<!-- <script>
-
-
-	$(document).on("scroll", function(){
-		if
-      ($(document).scrollTop() > 200){
-		  $(".header").addClass("shrink").addClass("");
-		}
-		else
-		{
-			$(".header").removeClass("shrink");
-		}
-	});
-
-	$(document).on("scroll", function(){
-		if
-      ($(document).scrollTop() > 200){
-		  $(".nav-links").addClass("hidden");
-		}
-		else
-		{
-			$(".nav-links").removeClass("hidden");
-		}
-	});
-
-</script>
- -->
 </body>
 </html>
