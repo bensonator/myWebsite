@@ -11,36 +11,39 @@
 	<script type="text/javascript" src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
 </head>
 <body>
+
+	<div id="full-page-nav" class="overlay" style="height:0%">
+		<a href="javascript:void(0)" class="closebtn" onclick="closeNav()"><img src="assets/icons/navClose.svg"></a>
+		<div class="links-mobile-overlay">
+			<li>
+				<a class="nav-headers" href="product.html">PRODUCT DESIGN</a>
+				<a class="nav-links" href='project-aura.html'>Qubit Aura</a>
+				<a class="nav-links" href='project-segments.html'>Qubit Segments</a>
+			</li>
+			<li>
+				<a class="nav-headers" href="visual.html">VISUAL DESIGN</a>
+				<a class="nav-links" href='project-tad.html'>Truth About Data</a>
+				<a class="nav-links" href='project-marketing.html'>Qubit Marketing</a>
+				<a class="nav-links" href='project-rada.html'>RADA</a>
+			</li>
+			<li>
+				<a class="nav-headers" href="https://medium.com/@sarahbenson18">WRITING</a>
+			</li>
+			<li>
+				<a class="nav-headers" href='about.html'>ABOUT</a>
+			</li>
+		</div>
+	</div>
+	
 	<div class="header shrink">
 
 			<div class="mobile-menu">
 				<a class="logo-mobile" href="index.html">SARAH BENSON</a>
-				<div class="burger-btn">
+				<div class="burger-btn" onclick="openNav()">
 					<span></span>
 					<span></span>
 					<span></span>
 				</div>
-
-				<div class="links-mobile">
-					<li>
-						<a class="nav-headers" href="product.html">PRODUCT DESIGN</a>
-						<a class="nav-links" href='project-aura.html'>Qubit Aura</a>
-						<a class="nav-links" href='project-segments.html'>Qubit Segments</a>
-					</li>
-					<li>
-						<a class="nav-headers" href="visual.html">VISUAL DESIGN</a>
-						<a class="nav-links" href='project-tad.html'>Truth About Data</a>
-						<a class="nav-links" href='project-marketing.html'>Qubit Marketing</a>
-						<a class="nav-links" href='project-rada.html'>RADA</a>
-					</li>
-					<li>
-						<a class="nav-headers" href="https://medium.com/@sarahbenson18">WRITING</a>
-					</li>
-					<li>
-						<a class="nav-headers" href='about.html'>ABOUT</a>
-					</li>
-				</div>
-
 			</div>
 
 			<div class="desktop-menu">
@@ -141,6 +144,18 @@
 			<img src="assets/icons/dribbble.svg">
 		</div>
 	</div>	
+
+<script>
+
+	function openNav() {
+		document.getElementById("full-page-nav").style.height="100%";
+	}
+
+	function closeNav() {
+		document.getElementById("full-page-nav").style.height="0%";
+	}	
+
+</script>
 
 </body>
 </html>
