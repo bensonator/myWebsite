@@ -223,6 +223,28 @@
 	});
 
 
+	 $(function(){
+
+	        $('.header').hover(function(){
+
+	            $('.header').removeClass('shrink');
+	        }, function(){
+	            $('.header').addClass('shrink');
+	        });
+	    });
+
+
+	 $(function(){
+
+	        $('.header').hover(function(){
+
+	            $('.nav-links').removeClass('hidden');
+	        }, function(){
+	            $('.nav-links').addClass('hidden');
+	        });
+	    });
+
+
 	function openNav() {
 		document.getElementById("full-page-nav").style.height="100%";
 	}

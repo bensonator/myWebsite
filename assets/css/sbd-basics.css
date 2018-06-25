@@ -150,22 +150,11 @@ li {
 	margin-top: 100px;
 }
 
-/*.small {
-	height:80px;
-	position:fixed;
-	width:100%;
-	z-index: 100;
-	top:0;
-}
-
-.up {
-  transform: translateY(-16px);
-}*/
-
 .shrink {
 	transform: translateY(-16px);
 	height:80px;
 }
+
 
 .project {
 	height: 312px;
@@ -424,9 +413,6 @@ p {
 
 /*Extra for project page*/
 
-/*body {
-	background-color: #F5F5F5; 
-}*/
 .header-image {
 	height:320px;
 	background-image: url(file:///Users/sarah458_122/Dropbox/SBD%20-%20website/images/QProd-header.png);

@@ -34,7 +34,7 @@
 			</li>
 		</div>
 	</div>
-	
+
 	<div class="header shrink">
 
 			<div class="mobile-menu">
@@ -51,9 +51,14 @@
 				<div class="link-groups">
 					<li>
 						<a class="nav-headers" href="product.html">PRODUCT DESIGN</a>
+						<a class="nav-links hidden" href='project-aura.html'>Qubit Aura</a>
+						<a class="nav-links hidden" href='project-segments.html'>Qubit Segments</a>						
 					</li>
 					<li>
 						<a class="nav-headers" href="visual.html">VISUAL DESIGN</a>
+						<a class="nav-links hidden" href='project-tad.html'>Truth About Data</a>
+						<a class="nav-links hidden" href='project-marketing.html'>Qubit Marketing</a>
+						<a class="nav-links hidden" href='project-rada.html'>RADA</a>						
 					</li>
 					<li>
 						<a class="nav-headers" href="https://medium.com/@sarahbenson18">WRITING</a>
@@ -167,6 +172,20 @@
 	function closeNav() {
 		document.getElementById("full-page-nav").style.height="0%";
 	}	
+
+	 $(function(){
+
+	        $('.header').hover(function(){
+	            $('.header').toggleClass('shrink');
+	        });
+	    });
+
+	 $(function(){
+
+	        $('.header').hover(function(){
+	            $('.nav-links').toggleClass('hidden');
+	        });
+	    });	
 
 </script>
 
