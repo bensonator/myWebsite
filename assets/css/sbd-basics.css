@@ -123,11 +123,21 @@ a {
 
 a.nav-links:hover {
 	background: rgba(33, 40, 50, 0.04);
+	cursor: pointer;
 }
 
 li {
 	list-style-type: none;
 
+}
+
+.body-link {
+	text-decoration: underline;
+}
+
+.body-link:hover {
+	color:rgba(33, 40, 50, 0.75);
+	cursor: pointer;
 }
 
 .content{
