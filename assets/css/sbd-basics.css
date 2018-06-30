@@ -59,7 +59,7 @@
 }
 
 .logo {
-	font-family: 'BrandonGrotesqueWeb-Black';
+	font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
 	font-weight: 700;
 	color: #222C34;
 	font-size: 32px;
@@ -99,6 +99,7 @@
     -o-transition:all 0.1s ease;
     -moz-transition:all 0.1s ease;
 }
+
 
 .burger-btn {
 	position:absolute;
@@ -140,7 +141,7 @@ li {
 	cursor: pointer;
 }
 
-.content{
+.content {
 	display:flex;
 	flex-direction: column;
 	flex-wrap: wrap;
@@ -156,7 +157,6 @@ li {
 	flex-wrap: wrap;
 	justify-content: center;
 	overflow: hidden;
-	margin: 32px;
 	margin-top: 100px;
 }
 
@@ -253,7 +253,7 @@ li {
 
 h1 {
 	color: #222C34;
-	font-family: 'BrandonGrotesqueWeb-Black';
+	font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
 	font-size:42px;
 	text-align: left;
 	letter-spacing: 1px;
@@ -261,7 +261,7 @@ h1 {
 
 h2 {
 	color: rgba(255, 255, 255, 1);
-	font-family: 'BrandonGrotesqueWeb-Black';
+	font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
 	font-size:24px;
 	text-align: left;
 	letter-spacing: 1px;
@@ -278,7 +278,7 @@ h3 {
 
 h4 {
 	color: rgba(255, 255, 255, 1);
-	font-family: 'BrandonGrotesqueWeb-Black';
+	font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
 	font-size: 14px;
 	text-align: left;
 	line-height: 16px;
@@ -289,7 +289,7 @@ h4 {
 h5 {
 	color: #222C34;
 	text-decoration: none;
-	font-family: 'BrandonGrotesqueWeb-Black';
+	font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
 	letter-spacing: 2px;
 	padding: 44px 32px 0px 0px;
 	font-size:12px;
@@ -299,7 +299,7 @@ h5 {
 h6 {
 	color: #222C34;
 	text-decoration: none;
-	font-family: 'BrandonGrotesqueWeb-Black';
+	font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
 	letter-spacing: 2px;
 	font-size:14px;
 	display:block;
@@ -400,6 +400,10 @@ p {
 	vertical-align: center; 
 	padding: 8px;
 	justify-content: space-around;
+}
+
+.footer-images {
+	padding-top: 6px;
 }
 
 .footer-mobile {
@@ -531,7 +535,7 @@ p {
 .company-name{
 	color: #222C34;
 	text-decoration: none;
-	font-family: 'BrandonGrotesqueWeb-Black';
+	font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
 	letter-spacing: 2px;
 	font-size:14px;
 	line-height: 24px;
@@ -576,7 +580,7 @@ p {
 .nav-headers {
 	color: #222C34;
 	text-decoration: none;
-	font-family: 'BrandonGrotesqueWeb-Black';
+	font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
 	letter-spacing: 2px;
 	padding: 44px 32px 0px 0px;
 	font-size:12px;
@@ -588,6 +592,28 @@ p {
 }*/
 
 @media only screen and (max-width: 860px) {
+	
+	.content {
+		margin: 48px 24px 24px 24px;
+	}
+
+	.content-shrink {
+		margin: 24px;
+	}
+
+
+	.project {
+		margin-bottom: 24px;
+	}
+
+	.project-content {
+		margin: 24px;
+	}
+
+	.project-content {
+		margin-top: 160px;
+	}
+
 	.desktop-menu {
 		display:none;
 	}
@@ -608,27 +634,27 @@ p {
 	}
 
 	.logo-mobile{
-		font-family: 'BrandonGrotesqueWeb-Black';
+		font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
 		font-weight: 700;
 		color: #222C34;
-		font-size: 32px;
+		font-size: 24px;
 		line-height: 40px;
 		letter-spacing: 2px;
 		display:block;
 		vertical-align: middle;
 		padding-top: 32px;
-		padding-left: 32px;
+		padding-left: 24px;
 		max-height: 100px;
-	}
-
-	.content {
-		margin-top: 64px;
 	}
 
 	.header {
 		height:80px;
 		transform: translateY(-16px);
 
+	}
+
+	.nav-links {
+		visibility: visible;
 	}
 
 	.half-text {
@@ -652,6 +678,8 @@ p {
 		display:none;
 	}
 
+
+
 	.mobile-footer-links {
 		display: flex;
 		flex-direction: row;
@@ -664,6 +692,7 @@ p {
 		width:50%;
 		display:flex;
 		flex-direction:column;
+		justify-content: center;
 		list-style:none;
 		margin-bottom: 32px;
 	}
@@ -683,7 +712,7 @@ p {
 		background-image: url(../images/about/sarah.png);
 		background-size: cover;
 		background-repeat: no-repeat;
-		margin-bottom: 32px;
+		margin-bottom: 24px;
 
 	}
 
@@ -709,10 +738,24 @@ p {
 
 @media only screen and (max-width: 600px) {
 
+	.logo-mobile{
+		font-family: 'BrandonGrotesqueWeb-Black', sans-serif;
+		font-weight: 700;
+		color: #222C34;
+		font-size: 24px;
+		line-height: 40px;
+		letter-spacing: 2px;
+		display:block;
+		vertical-align: middle;
+		padding-top: 32px;
+		padding-left: 24px;
+		max-height: 100px;
+	}
+
 	.project {
 		height: 440px;
 		width:100%;
-		margin-bottom: 32px;
+		margin-bottom: 24px;
 		display:flex;
 		flex-direction: column-reverse;	
 	}
@@ -727,7 +770,7 @@ p {
 		background-color: #222C34;
 		height:120px;
 		width:100%;
-		padding:32px;
+		padding:24px;
 	}
 
 	.descriptions {
@@ -745,6 +788,7 @@ p {
 /*	project page
 */
 	
+
 	.project-info {
 	display:flex;
 	flex-direction: column;
